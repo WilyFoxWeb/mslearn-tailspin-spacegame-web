@@ -16,8 +16,5 @@ steps:
    - task: DotNetCoreCLI@2
      displayName: 'dotnet build $(buildConfiguration)'
      inputs:
-       majorVersion: 3
-       minorVersion: 1
-       patchVersion: 100
        command: build
        arguments: '--configuration $(buildConfiguration)'
